@@ -1,0 +1,32 @@
+Javascript 
+javascript is synchronous single threaded language
+Exection Context is created first while running javascript code
+EC has Memory and Code component
+first of all memory gets allocated to variables and functions
+variables are intiated with undefined 
+for function whole function code gets allocated
+In code component line by line code is executed 
+where variables get assigned their values
+and function gets their own execution Context
+all this is done using Call stack
+in which first global execution context is created and then
+functions get their own execution context
+
+
+React Day 1
+
+injecting HTML elements from javascript 
+
+const <elementName> =document.createElement()
+element.innerHTML="<content>"
+const root = document.getElementById("<element Id from Html>")
+root.appendChild(elementName)
+
+injecting HTML elements through React
+
+const <elementName> = React.createElement("<elementName>",{props},[children,..]);
+const <root> = ReactDOM.createRoot(document.getElementById("<element Id from Html>"))
+root.render(<elementName>)
+
+Day 2
+
