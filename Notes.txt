@@ -1,16 +1,84 @@
 Javascript 
-javascript is synchronous single threaded language
-Exection Context is created first while running javascript code
-EC has Memory and Code component
-first of all memory gets allocated to variables and functions
-variables are intiated with undefined 
-for function whole function code gets allocated
-In code component line by line code is executed 
-where variables get assigned their values
-and function gets their own execution Context
-all this is done using Call stack
-in which first global execution context is created and then
-functions get their own execution context
+#javascript is synchronous single threaded language
+
+#Everything in Javascript happens inside an Execution context
+
+#Exection Context is created first while running javascript code
+
+#EC has Memory and Code component
+
+#first of all memory gets allocated to variables and functions
+*variables are intiated with undefined 
+*for function whole function code gets allocated
+
+#In code component line by line code is executed 
+ where variables get assigned their values
+ and function gets their own execution Context
+
+#all this is done using Call stack
+ in which first global execution context is created and then
+ functions get their own execution context
+
+#Call stack maintains order of execution of execution contexts
+
+#Hoisting
+ varables and functions can be accessed or invoked before defining
+ them as variables and functions get memory allocated so 
+ we can acces them before defining
+
+*in case varaibles you will get undefined 
+*in case of normal functions you will get the function 
+*but in case of function assigned to variable or arrow function 
+ you will get undefined  
+
+#after execution of code, execution context will be removed from call stack
+
+# If we do not write anything (not single line of code) also javascript engine
+creates a global execution context you can debug and check
+
+# window object gets created in global execution Context
+ which contains all variable outside functions
+ window object can be reffered by this keyword
+ 
+#undefined is space holder 
+
+# javascript is loosely typed language taht means we can assign 
+ any value like string, int, boolean to same variable 
+
+# lexical means hierrarchical
+
+#child fuction has access to it's local scope + lexical scope of parent
+
+# in case of global, lexical scope is null
+
+# temporal deadzone : let and const varaibles are in seperate memory space
+ than global and can not be accessed before intialization they are hoisted
+ like var but are present in temporal deadzone till intiallization
+
+# same let varibles can not be redeclared again like var
+
+# const variables must be intialized at time of declaration and value cannot be
+  changed afterwards
+
+# Block Scope : let and const are block scope while var is not block scoped
+
+# shadowing : same name varible declaration in other scope
+
+# shadowing in let and const doesn't change original variable value in block scope 
+  while in case of var value of original gets changed as var is not block scoped 
+
+# let and const are block scoped
+# var is global and function scoped
+
+#closure is local scope bundeled with lexical environment
+
+# if we return inner function and we can have variables of outer 
+  function after its execution context is completed as we have lexical environment 
+  of outer function in inner function
+
+
+
+
 
 
 React Day 1
