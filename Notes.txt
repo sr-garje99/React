@@ -76,9 +76,19 @@ creates a global execution context you can debug and check
   function after its execution context is completed as we have lexical environment 
   of outer function in inner function
 
+# functions are first class citizens in javascript as they can be treated as 
+  values and can be passed to other functions as argument and can be returned from
+  functions
 
+#Callback functions : functions that are passed as argument to other functions
 
+#we can achieve asynchrous functions using callback functions
 
+# setTimeout stores the callback function in memoery and after the timer ends
+ it loads execution context of callback function in call stack 
+
+# callback functions are also used in event listner function, after event happens 
+  function get executed
 
 
 React Day 1

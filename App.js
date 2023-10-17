@@ -34,6 +34,32 @@ const out = counter()
 out()
 out()
 counter()
+const stock = [
+    {name:"RIL",open:1200,close:1100},
+    {name:"Wipro",open:200,close:300},
+    {name:"Agro",open:100,close:100},
+]
+
+var green = stock.filter((s)=>s.close>s.open)
+var red = stock.filter((s)=>s.open>s.close)
+var list = stock.map((s)=>s.name)
+var change = stock.reduce(function (p,s){
+  p[s.name]=s.open-s.close
+    return p;},{})
+console.log(red,green)
+console.log(list)
+console.log(change)
+
+//event listner and callback function
+function listen(){
+    var count =0;
+    document.getElementById("clickMe").addEventListener("click",
+    function x(){
+        count++;
+        console.log(count);
+    })
+}
+listen();
 
         const parent = React.createElement("div",{id:"parent"},
         [ React.createElement("children",{id:"children"},[
