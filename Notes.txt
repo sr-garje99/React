@@ -3,7 +3,7 @@ Javascript
 
 #Everything in Javascript happens inside an Execution context
 
-#Exection Context is created first while running javascript code
+#Execution Context is created first while running javascript code
 
 #EC has Memory and Code component
 
@@ -80,9 +80,14 @@ creates a global execution context you can debug and check
   values and can be passed to other functions as argument and can be returned from
   functions
 
+cons of closure : 1. Memory wastage / leak can happen if lot of memory is generated
+                     and not managed propperly
+                  2. Browser may freeze to many functions present one inside other 
+                  3. to many eventlistener will consume more memory  
+
 #Callback functions : functions that are passed as argument to other functions
 
-#we can achieve asynchrous functions using callback functions
+#we can achieve asynchronous programming using callback functions
 
 # setTimeout stores the callback function in memoery and after the timer ends
  it loads execution context of callback function in call stack 
@@ -90,6 +95,63 @@ creates a global execution context you can debug and check
 # callback functions are also used in event listner function, after event happens 
   function get executed
 
+# asynchrous 
+ Javascript is run in javascript run time environment by javascript engine
+
+ javascript engine has Web API provided by browser 
+ these web API can be accessed from global object(window)
+ setTimeout 
+ eventListner
+ console 
+ dom 
+ local storage
+ fetch
+
+# event loops : it loads execution context of callback functions 
+                in callback or micro queue
+
+priority : microtask >> callback queue
+
+fetch api function callbacks are queued in microtask queue
+
+# js engines
+ chrome : v8
+ edge : chakra
+ mozilla : spiderMonkey
+
+parsing >> compilation >> execution 
+
+code is parsed to Abstract Syntax Tree (AST) 
+it is compiled jus in time and converted to machine code for execution 
+
+setTimeout method will excecute callback function after timer is done but 
+if GEC takes more time than timer then callback function will be queued in callback queue
+and it will get executed only after the global execution context is done if GEC takes 
+more time then call back function will wait and after GEC it will be executed 
+
+#Higher order functions : functions having other functions as arguments or return 
+                        functions aka HOF
+
+DRY : Don't Repeat Yourself 
+
+#Promises
+promise is object representation of eventual completion or failure of
+asynchronous operation 
+
+before promises, callback functions were used mostly for asynchronous operation
+inversion of control : control our callback function is in hands of function in 
+which it is passed as argument, if it calls the callback function or not we donot
+have guarrante or calls more than once 
+
+promise has state and Result
+3 states pending, fullfilled, rejected
+result will contain response 
+
+## promise object is immutable
+ call callback function is called once promise is fullfilled by attatching it 
+ to then 
+
+# Promise Chaining
 
 React Day 1
 

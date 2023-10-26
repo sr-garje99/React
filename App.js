@@ -60,6 +60,12 @@ function listen(){
     })
 }
 listen();
+//promise
+const GITHUB_API ="https://api.github.com/users/sr-garje99"
+const user = fetch(GITHUB_API);
+user.then((r)=>{
+    console.log(r.data);
+})
 
         const parent = React.createElement("div",{id:"parent"},
         [ React.createElement("children",{id:"children"},[
