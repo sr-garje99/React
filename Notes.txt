@@ -150,8 +150,17 @@ result will contain response
 ## promise object is immutable
  call callback function is called once promise is fullfilled by attatching it 
  to then 
-
+return new Promise(resolve,reject){
+   resolve()
+   reject()
+}
 # Promise Chaining
+always return while Chaining 
+
+catch can be attatched to handle errors
+
+# async await
+
 
 React Day 1
 
@@ -169,4 +178,25 @@ const <root> = ReactDOM.createRoot(document.getElementById("<element Id from Htm
 root.render(<elementName>)
 
 Day 2
+npm : package manager
+package.json is configuration for npm
+bundler bundels app so that it can be shipped to production
+ex. parcel, vite, web-pack
+2 types of packages / dependencies
+dev and normal
+"version" : "^2.10.2"  "version" : "~2.10.2"
+caret(^) and tilde(~)
+^ updates minor version automatically
+~ updates major version automatically
+it is safe to update minor versions as major version might break your code
+
+package-lock.json : keeps track of exact version of dependencies
+
+node modules : contains actual dependencies 
+
+
+
+
+
+
 
