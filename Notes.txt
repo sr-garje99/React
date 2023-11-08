@@ -194,6 +194,31 @@ package-lock.json : keeps track of exact version of dependencies
 
 node modules : contains actual dependencies 
 
+npx : execute package
+
+HMR : hot module replacement
+
+parcel does caching, code splitting, image optimaization, compressing, bundling, minification,etc 
+
+npx parcel build index.html 
+// we are provinding entry point as index.html so remove main:app.js from package.json 
+otherwise it will throw error 
+
+we can provide supported browser versions for react app by 
+adding below to package.json
+"browserlist":[ 
+  "last 2 versions"
+]
+
+Day 3 
+React elements are javascript objects 
+root render replaces the code in root div id with new html code generated 
+
+Babel : transpiler 
+
+function which is returning JSX is functional component
+
+to run javascript code in JSX include it in {}
 
 
 
