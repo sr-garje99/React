@@ -1,3 +1,59 @@
-#heading{
-    color:blue;
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    width:200px;
+}
+
+.nav-items{
+    padding:0 20px;
+}
+.nav-items >ul{
+    display:flex;
+    list-style-type: none;
+}
+.nav-items >ul>li{
+    padding:10px;
+    margin:10px;
+    font-size: 34px;
+}
+.body{
+    display:flex;
+    width: 100%;
+    padding:2rem;
+    
+}
+.res-container{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    width:98%;
+}
+.restauCard{
+    width:300px;
+    padding:5px;
+    margin: 2rem;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+
+}
+.restauCard:hover{
+    cursor: pointer;
+    border:1px solid grey;
+}
+.restauCard >h4{
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+}
+.restauCard >h5{
+    font-size: 24px;
+    margin: 5px;
+    padding: 5px;
+}
+.image{
+    width:300px;
 }

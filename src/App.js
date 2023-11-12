@@ -1,6 +1,8 @@
 
 import  ReactDOM  from "react-dom";
 import React from "react";
+import Header from "./components/Header";
+import Body from "./components/Body";
 
 const parent = React.createElement("div",{id:"parent"},
 [ React.createElement("div",{id:"children"},[
@@ -8,17 +10,28 @@ const parent = React.createElement("div",{id:"parent"},
     React.createElement("h2",{id:"heading2"},"Namaste React")
 ]),
 ]);
+const App =()=>(
+    <div>
+        <Header/>
+        <Body/>
+    </div>
+)
 
 const root =  ReactDOM.createRoot(document.getElementById("root"));
 root.render(parent);
 console.log(parent);
-
+const that = () =>(
+    
+    10 +20
+);
 const Heading = () => (
     <div>
+        {parent}
+        {that()}
         <h1>Inside component</h1>
     </div>
 );
-root.render(<Heading/> ); 
+root.render(<App/> ); 
 // block scope and shdowing
 // var a = 10;
 // {

@@ -122,7 +122,7 @@ fetch api function callbacks are queued in microtask queue
 parsing >> compilation >> execution 
 
 code is parsed to Abstract Syntax Tree (AST) 
-it is compiled jus in time and converted to machine code for execution 
+it is compiled just in time and converted to machine code for execution 
 
 setTimeout method will excecute callback function after timer is done but 
 if GEC takes more time than timer then callback function will be queued in callback queue
@@ -139,7 +139,7 @@ promise is object representation of eventual completion or failure of
 asynchronous operation 
 
 before promises, callback functions were used mostly for asynchronous operation
-inversion of control : control our callback function is in hands of function in 
+inversion of control : control of callback function is in hands of function in 
 which it is passed as argument, if it calls the callback function or not we donot
 have guarrante or calls more than once 
 
@@ -220,7 +220,23 @@ function which is returning JSX is functional component
 
 to run javascript code in JSX include it in {}
 
+COMPONENT INSIDE COMPONENT AKA component composition
 
+when you have to pass data dynamically to component then pass it as prop 
+
+conflict driven ui / data driven ui 
+
+named / default export 
+
+export const name = value ;
+
+import {name} from "path";
+
+export default name; 
+
+useState is javascript function 
+
+whenever state variable changes react rerenders component 
 
 
 
