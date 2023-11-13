@@ -18,7 +18,8 @@ const App =()=>(
 )
 
 const root =  ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(<App/> ); 
+//root.render(parent);
 console.log(parent);
 const that = () =>(
     
@@ -31,7 +32,7 @@ const Heading = () => (
         <h1>Inside component</h1>
     </div>
 );
-root.render(<App/> ); 
+
 // block scope and shdowing
 // var a = 10;
 // {

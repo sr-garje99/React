@@ -234,10 +234,28 @@ import {name} from "path";
 
 export default name; 
 
-useState is javascript function 
+useState is javascript function : it maintains state of the variable in component 
 
 whenever state variable changes react rerenders component 
 
+frameworks and libraries like react, angular are trying to keep data layer
+and UI layer in sync 
+
+React makes fast and efficient DOM manipulation, Reconcelation algorithm(React fiber),
+React has virtual DOM, it compares previous DOM and virtual DOM and updates DOM with
+the changes only
+
+useEffect(()=>{},[]) 
+callback function is called first when component has redered once then it will be 
+called and component rendered again,and after when there is change in dependency array 
+
+optional chaining 
+
+custom hooks 
+
+lazy, suspense
+
+lifting the state up
 
 
 
