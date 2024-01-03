@@ -255,7 +255,30 @@ custom hooks
 
 lazy, suspense
 
+controlled / uncontrolled components
+
 lifting the state up
+
+Prop drilling
+
+useContext
+
+Redux tool kit 
+Store : Global central object contains slice (logical partition)
+
+dispatch action : like onclick calls reducer function 
+
+reducer : contains logic to change data 
+
+Selector : reads data from slice to UI aka subscribing 
+
+
+
+ 
+
+
+
+
 
 
 
